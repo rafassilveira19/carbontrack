@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - CarbonTrack</title>
+  <link rel="stylesheet" href="/login/login.css">
+</head>
+<body>
+
+<div class="login-container">
+
+  <div class="top-bar">
+    <button type="button" class="btn-voltar"
+      onclick="window.location.href='../index.html'">
+      Voltar
+    </button>
+  </div>
+
+  <form id="loginForm" class="login-form">
+    <h2>Entrar</h2>
+
+    <div class="input-group">
+      <input type="email" id="email" placeholder="Email">
+      <small class="erro"></small>
+    </div>
+
+    <div class="input-group senha-wrapper">
+      <input type="password" id="senha" placeholder="Senha">
+      <span id="toggleSenha">Ver</span>
+      <small class="erro"></small>
+    </div>
+
+    <div class="options">
+      <label>
+        <input type="checkbox" id="lembrar"> Lembrar-me
+      </label>
+    </div>
+
+    <button type="submit" class="btn-login">Entrar</button>
+
+    <p class="link">
+      Não tem conta? <a href="/login/criar_conta.html">Criar conta</a>
+    </p>
+
+    <p id="erroGeral"></p>
+  </form>
+
+</div>
+
+<script type="module" src="login.js"></script>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+  import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyB3BogFx31JZoky_39uU95eyFhljZoc4ig",
+  authDomain: "carbontrack-62e14.firebaseapp.com",
+  projectId: "carbontrack-62e14",
+  storageBucket: "carbontrack-62e14.firebasestorage.app",
+  messagingSenderId: "891363379337",
+  appId: "1:891363379337:web:6fa7d4f3b919b7a76cde58",
+  measurementId: "G-TPCBRYM1V2"
+};
+
+  const app = initializeApp(firebaseConfig);
+  window.auth = getAuth(app);
+</script>
+</body>
+</html>

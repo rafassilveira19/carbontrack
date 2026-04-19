@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>CarbonTrack</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">CarbonTrack</div>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="#">Sobre</a>
+    <a href="/login/login.html" class="btn-login">Login</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Bem-vindo ao CarbonTrack</h1>
+    <p>Aprenda e simule o rastreamento<br>de Créditos de Carbono.</p>
+    
+    <div class="buttons">
+      <a href="/plataforma/plataforma.html" class="btn-primary">Acessar Plataforma</a>
+      <button class="btn-secondary">Saiba Mais</button>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="card">
+  <div class="icon">
+    <i class="fa-solid fa-seedling"></i>
+  </div>
+  <h3>Cadastre Projetos Ambientais</h3>
+  <p>Crie iniciativas simuladas e gere créditos de carbono.</p>
+</div>
+
+<div class="card">
+  <div class="icon">
+    <i class="fa-solid fa-chart-line"></i>
+  </div>
+  <h3>Gerencie Créditos de Carbono</h3>
+  <p>Monitore e simule transações de créditos.</p>
+</div>
+
+<div class="card">
+  <div class="icon">
+    <i class="fa-solid fa-globe"></i>
+  </div>
+  <h3>Aprenda sobre Sustentabilidade</h3>
+  <p>Entenda o impacto do mercado de carbono.</p>
+</div>
+</section>
+<script>
+  function logout() {
+    localStorage.removeItem("logado");
+    localStorage.removeItem("usuario");
+    window.location.href = "../login/login.html";
+  }
+</script>
+</body>
+</html>
