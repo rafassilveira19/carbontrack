@@ -13,7 +13,7 @@
   <nav>
     <a href="index.html">Início</a>
     <a href="#">Sobre</a>
-    <a href="login.html" class="btn-login">Login</a>
+    <a href="login/login.html" class="btn-login">Login</a>
   </nav>
 </header>
 
@@ -23,7 +23,7 @@
     <p>Aprenda e simule o rastreamento<br>de Créditos de Carbono.</p>
     
     <div class="buttons">
-      <a href="/plataforma/plataforma.html" class="btn-primary">Acessar Plataforma</a>
+      <a href="plataforma/plataforma.html" class="btn-primary">Acessar Plataforma</a>
       <button class="btn-secondary">Saiba Mais</button>
     </div>
   </div>
@@ -58,7 +58,7 @@
   function logout() {
     localStorage.removeItem("logado");
     localStorage.removeItem("usuario");
-    window.location.href = "../login/login.html";
+    window.location.href = "login/login.html";
   }
 </script>
 </body>

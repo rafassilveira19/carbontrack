@@ -51,7 +51,7 @@ form.addEventListener("submit", async (e) => {
 
     alert("Conta criada com sucesso!");
 
-    window.location.href = "/login/login.html";
+    window.location.href = "login/login.html";
 
   } catch (error) {
     erroGeral.textContent = "Erro ao criar conta (email pode já existir)";
