@@ -16,31 +16,39 @@
   </div>
 </header>
 
-<main class="dashboard">
+<h2>Calculadora de Carbono</h2>
 
-  <h1>Dashboard</h1>
+<div class="calculadora">
 
-  <h2>Resumo</h2>
+  <div class="calc-grid">
 
-<div class="metrics">
-  <div class="metric-card">
-    <h3 id="totalCreditos">0</h3>
-    <p>Créditos Totais</p>
+    <div>
+      <label>Energia (kWh/mês)</label>
+      <input type="number" id="energia">
+    </div>
+
+    <div>
+      <label>Diesel (litros/mês)</label>
+      <input type="number" id="diesel">
+    </div>
+
+    <div>
+      <label>Gasolina (litros/mês)</label>
+      <input type="number" id="gasolina">
+    </div>
+
+    <div>
+      <label>Transporte (km/mês)</label>
+      <input type="number" id="transporte">
+    </div>
+
   </div>
 
-  <div class="metric-card">
-    <h3 id="totalProjetos">0</h3>
-    <p>Projetos</p>
-  </div>
+  <button onclick="calcularCarbono()">Calcular</button>
 
-  <div class="metric-card">
-    <h3 id="mediaCreditos">0</h3>
-    <p>Média por Projeto</p>
-  </div>
+  <div id="resultadoCalc" class="resultado"></div>
+
 </div>
-
-<h2>Gráfico</h2>
-<canvas id="grafico"></canvas>
 
 <script type="module" src="plataforma.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
