@@ -67,7 +67,7 @@ form.addEventListener("submit", async function(e) {
       localStorage.setItem("usuario", email);
     }
 
-    window.location.href = "/plataforma/plataforma.html";
+    window.location.href = "plataforma/plataforma.html";
 
   } catch (error) {
     erroGeral.textContent = "Email ou senha inválidos";

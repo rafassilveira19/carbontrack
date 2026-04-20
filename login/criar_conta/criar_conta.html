@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Criar Conta - CarbonTrack</title>
+  <link rel="stylesheet" href="criar_conta.css">
+</head>
+<body>
+
+<div class="login-container">
+  <form id="registerForm">
+
+    <h2>Criar Conta</h2>
+
+    <div class="input-group">
+      <input type="email" id="email" placeholder="Email">
+      <small class="erro"></small>
+    </div>
+
+    <div class="input-group">
+      <input type="password" id="senha" placeholder="Senha">
+      <small class="erro"></small>
+    </div>
+
+    <div class="input-group">
+      <input type="password" id="confirmarSenha" placeholder="Confirmar senha">
+      <small class="erro"></small>
+    </div>
+
+    <button type="submit">Cadastrar</button>
+
+    <p id="erroGeral"></p>
+
+    <p class="link">
+      Já tem conta? <a href="../login.html">Entrar</a>
+    </p>
+
+  </form>
+</div>
+
+<script type="module" src="criar_conta.js"></script>
+</body>
+</html>
