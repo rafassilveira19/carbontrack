@@ -38,7 +38,7 @@ let userAtual = null;
 
 onAuthStateChanged(auth, (user) => {
   if (!user) {
-    window.location.href = "login/login.html";
+    window.location.href = "../login.html";
   } else {
     userAtual = user;
     document.getElementById("userEmail").textContent = user.email;
@@ -49,7 +49,7 @@ onAuthStateChanged(auth, (user) => {
 
 function logout() {
   signOut(auth).then(() => {
-    window.location.href = "login/login.html";
+    window.location.href = "../login.html";
   });
 }
 
